@@ -1,4 +1,32 @@
 body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #2e8b57;
+    padding: 1rem;
+    color: white;
+}
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.intro {
+    text-align: center;
+    margin: 2rem 0;
+}
+.featured {
+    padding: 1rem;
+}
+.destinations {
+    display: flex;
+    justify-content: space-around;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2e8b57;
+    color: white;
 }
