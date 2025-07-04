@@ -1,0 +1,34 @@
+name: About Us Page Deployment
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - 'pages/about.html'
+      - 'styles/about.css'
+      - '.github/workflows/about-us-deploy.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Linting Checks
+        run: |
+          npx htmlhint pages/about.html
+          npx stylelint styles/about.css
+
+      - name: Deploy About Us Page to Development Environment
+        run: echo "Deploying About Us Page to Development Environment"
