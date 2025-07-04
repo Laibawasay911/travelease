@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "color-no-invalid-hex": true,
+    "block-no-empty": true,
+    "selector-max-id": [1],
+    "declaration-empty-line-before": "never",
+    "no-duplicate-selectors": true,
+    "property-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true,
+    "selector-max-class": [3],
+    "max-nesting-depth": [2]
+  }
+}
